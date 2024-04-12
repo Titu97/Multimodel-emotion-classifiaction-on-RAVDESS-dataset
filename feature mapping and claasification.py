@@ -377,7 +377,7 @@ def featurate_mapping_and_classification():
 
     loss_function = nn.CrossEntropyLoss()
 
-    n=data
+    n=4
     h= feature
     labell = torch.arange(n, dtype=torch.int64).to(f'cuda:{x.device_ids[0]}')
     p = torch.tensor(np.ones((n, 1)), dtype=torch.float32).to(f'cuda:{x.device_ids[0]}')
